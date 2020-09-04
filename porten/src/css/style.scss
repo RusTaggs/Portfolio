@@ -1,5 +1,18 @@
+$black: #000;
+$darkenGrey: #0F0F0F;
+$darkGrey: #1F1F1F;
+$softGrey: #969696;
+$lightGrey: rgba(255, 255, 255, 0.4);
+$grey: #191B1C;
+$white: #fff;
+
+
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+body{
+	background: $black;
 }
