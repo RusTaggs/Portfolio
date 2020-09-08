@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'Post-No-Bills';
+	src: url(../fonts/PostNoBillsJaffna-Bold.ttf);
+}
 $black: #000;
 $darkenGrey: #0F0F0F;
 $darkGrey: #1F1F1F;
@@ -5,12 +9,28 @@ $softGrey: #969696;
 $lightGrey: rgba(255, 255, 255, 0.4);
 $grey: #191B1C;
 $white: #fff;
+$pt-sans: 'PT Sans', sans-serif;
+$pf-display: 'Playfair Display', serif;
+$pnb: Post-No-Bills;
 
 
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	color: $white;
+}
+.small-text{
+	font-size: 12px;
+	line-height: 16px;
+}
+.regular-text{
+	font-size: 14px;
+	line-height: 150%;
+}
+.big-text{
+	font-size: 16px;
+	line-height: 150%;
 }
 
 body{
@@ -18,10 +38,73 @@ body{
 }
 .topLine{
 	width: 1110px;
+	height: 44px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.topLine__info{
+	width: 385px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.info__item{
+		font-family: $pt-sans;
+		color: $softGrey;
+	}
+}
+.topLine__autorize{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.login{
+		text-decoration: none;
+		padding: 0 15px;
+		font-family: $pt-sans;
+		color: $softGrey;
+	}
+	.register{
+		text-decoration: none;
+		padding: 0 15px;
+		font-family: $pt-sans;
+		color: $softGrey;
+	}
+
 }
 nav{
+	
 	height: 80px;
 	background: $darkenGrey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.nav__container{
+		width: 1110px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+
+		.logo{
+			font-family: $pnb;
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 54px;
+			text-decoration: none;
+
+			text-transform: uppercase;;
+		}
+		.list__item{
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $softGrey;
+			font-family: $pt-sans;
+		}
+	}
 }
 .header__screen{
 	height: 810px;
