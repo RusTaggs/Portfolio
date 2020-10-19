@@ -52,7 +52,7 @@ header .nav_item a {
 .slider {
   width: 1020px;
   height: 490px;
-  background: url(img/slider_img.png) no-repeat;
+  background: url(../img/slider_img.png) no-repeat;
   background-size: cover;
 }
 .slider button {
